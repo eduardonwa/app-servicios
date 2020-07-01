@@ -1,0 +1,44 @@
+<resources>
+    /* Login Form */
+    <string name="app_name">david</string>
+    <string name="img_login">login</string>
+
+    <string name="username_label">Usuario</string>
+    <string name="username_input"></string>
+    <string name="pwd_label">Contraseña</string>
+    <string name="pwd_input"></string>
+    <string name="login_btn">INGRESAR</string>
+
+    /* Welcome Screen */
+    <string name="label_logout">SALIR</string>
+    <string name="logout_btn" />
+    <string name="welcome_label">Bienvenido,\n¿qué servicio buscas?</string>
+    <string name="search_label">Busco el servicio de</string>
+    <string name="popular_label">Populares</string>
+    <string name="settings_btn">Ajustes</string>
+    <string name="profile_btn">Perfil</string>
+    <string name="banana">Banana</string>
+    <string name="all_categories">Ver todas las categorías</string>
+    <string name="search_icon">search</string>
+    <string name="jump">jump_icon</string>
+
+    /* Categories Screen */
+    <string name="settings_nav_btn">Ajustes</string>
+    <string name="categories_nav_btn">Categorías</string>
+    <string name="profile_nav_btn">Perfil</string>
+    <string name="home_icon">home_icon</string>
+    <string name="electricidad_label">Electricista</string>
+    <string name="plomeria_label">Plomero</string>
+    <string name="herreria_label">Herrería</string>
+    <string name="aires_label">Aires/A</string>
+    <string name="jardineria_label">Jardinería</string>
+    <string name="electronica_label">Electrónica</string>
+    <string name="electrodomesticos_label">Electro Domésticos</string>
+    <string name="mecanicos_label">Mecánico</string>
+    <string name="llanteros_label">Llantero</string>
+    <string name="carpinteria_label">Carpintería</string>
+    <string name="albanyles_label">Albañiles</string>
+    <string name="cerrajero_label">Cerrajero</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15B8A9"
+    android:onClick="VerCategorias">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:onClick="VerCategorias"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:text="@string/welcome_label"
+                android:textColor="#FFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="288dp"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginRight="8sp"
+                    android:hint="@string/search_label"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="34sp"
+                        android:layout_marginRight="21sp"
+                        android:contentDescription="@string/search_icon"
+                        app:srcCompat="@drawable/search_icon" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginStart="21sp"
+                android:layout_marginTop="34dp"
+                android:text="@string/popular_label"
+                android:textColor="#FFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="377dp"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#E91E63"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/bananas" />
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#FF9800"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/cerezas" />
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#9C27B0"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/frambuesas" />
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#E91E63"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/fresas" />
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#FF9800"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/kiwis" />
+
+                    <ImageView
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:background="#673AB7"
+                        android:contentDescription="@string/banana"
+                        app:srcCompat="@drawable/mangos" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="34dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="VerCategorias"
+                    android:text="@string/all_categories"
+                    android:textColor="#FFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="@string/jump"
+                    android:onClick="VerCategorias"
+                    app:srcCompat="@drawable/jump" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:layout_marginTop="34dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="144dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginRight="55dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/settings_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/profile_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="144dp"
+                android:layout_height="55dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="89dp"
+                android:layout_marginBottom="34sp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="34dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/logout_btn"
+                    android:onClick="Anterior"
+                    app:srcCompat="@drawable/logout" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:onClick="Anterior"
+                    android:text="@string/label_logout"
+                    android:textColor="#E4E4E4"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    tools:text="@string/label_logout" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
