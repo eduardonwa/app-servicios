@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="@drawable/main_bg">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,7 +31,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="@string/welcome_label"
-                android:textColor="#000000"
+                android:textColor="#FFF"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -41,12 +43,15 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="377dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:textColorHint="#454545">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/search_label" />
+                        android:hint="@string/search_label"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#454545" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <ImageView
@@ -65,17 +70,19 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="start"
                 android:layout_marginStart="34dp"
+                android:layout_marginLeft="34dp"
                 android:layout_marginTop="55dp"
                 android:text="@string/popular_label"
-                android:textColor="#000000"
+                android:textColor="#000"
                 android:textSize="21sp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView
-                android:layout_width="533dp"
+                android:layout_width="match_parent"
                 android:layout_height="233dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="34dp">
+                android:layout_marginTop="34dp"
+                android:padding="13dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -84,76 +91,128 @@
 
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/bananas" />
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_aires_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
-                        android:id="@+id/imageView15"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/frambuesas" />
+                        app:srcCompat="@drawable/ic_albanyl_txt"
+                        style="@style/txt_icon_margin_tab"/>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_carpinteria_txt"
+                        style="@style/txt_icon_margin_tab"/>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_cerrajero_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/cerezas" />
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_electricista_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
-                        android:id="@+id/imageView19"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/imageView9"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/pina" />
+                        app:srcCompat="@drawable/ic_edomesticos_txt"
+                        style="@style/txt_icon_margin_tab"/>
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_electronica_txt"
+                        style="@style/txt_icon_margin_tab"/>
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_herreria_txt"
+                        style="@style/txt_icon_margin_tab"/>
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_jardineria_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
                         android:id="@+id/imageView16"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/fresas" />
+                        app:srcCompat="@drawable/ic_llantero_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
                         android:id="@+id/imageView17"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/kiwis" />
+                        app:srcCompat="@drawable/ic_mecanico_txt"
+                        style="@style/txt_icon_margin_tab"/>
 
                     <ImageView
                         android:id="@+id/imageView18"
-                        android:layout_width="133dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/uvas" />
+                        app:srcCompat="@drawable/ic_plomero_txt"
+                        style="@style/txt_icon_margin_tab"/>
                 </LinearLayout>
 
             </HorizontalScrollView>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="377dp"
                 android:layout_height="55dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="34dp"
+                android:background="@drawable/all_categories_btn"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:gravity="center" >
+                android:onClick="VerCategorias">
 
                 <TextView
                     android:layout_width="233dp"
                     android:layout_height="match_parent"
-                    android:text="@string/all_categories"
                     android:gravity="center"
+                    android:text="@string/all_categories"
                     android:textColor="#000000"
                     android:textSize="21sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="55dp"
                     android:layout_height="55dp"
-                    app:srcCompat="@drawable/jump"
                     android:contentDescription="@string/jump"
-                    android:layout_marginLeft="13dp"/>
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/jump" />
 
             </LinearLayout>
 
@@ -167,18 +226,17 @@
                 <Button
                     android:layout_width="233dp"
                     android:layout_height="55dp"
+                    android:layout_marginEnd="34dp"
                     android:layout_marginRight="34dp"
-                    android:background="@drawable/btn_bg"
+                    android:background="@drawable/category_btn_bg"
                     android:text="@string/profile_btn"
                     android:textColor="#FFFFFF"
-                    android:textSize="21sp"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="34dp" />
+                    android:textSize="21sp" />
 
                 <Button
                     android:layout_width="233dp"
                     android:layout_height="55dp"
-                    android:background="@drawable/btn_bg"
+                    android:background="@drawable/category_btn_bg"
                     android:text="@string/settings_btn"
                     android:textColor="#FFFFFF"
                     android:textSize="21sp"
@@ -188,24 +246,29 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="21dp"
                 android:layout_marginTop="55dp"
                 android:layout_marginBottom="55dp"
-                android:layout_marginStart="21dp"
                 android:gravity="start">
 
                 <ImageView
                     android:layout_width="55dp"
                     android:layout_height="55dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
                     android:contentDescription="@string/search_icon"
-                    app:srcCompat="@drawable/logout" />
+                    app:srcCompat="@drawable/ic_logout" />
 
                 <TextView
                     android:layout_width="89dp"
                     android:layout_height="55dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/exit_btn_bg"
                     android:gravity="center"
                     android:text="@string/label_logout"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="21sp"
                     android:textStyle="bold" />
 

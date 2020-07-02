@@ -12,4 +12,12 @@
         <item name="android:layout_height">1dp</item>
     </style>
 
+    <style name="txt_icon_margin">
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+
+    <style name="txt_icon_margin_tab">
+        <item name="android:layout_marginRight">13dp</item>
+    </style>
+
 </resources>

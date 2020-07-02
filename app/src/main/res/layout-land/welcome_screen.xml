@@ -7,7 +7,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +26,7 @@
                 android:layout_marginTop="8sp"
                 android:gravity="center"
                 android:text="@string/welcome_label"
-                android:textColor="#000000"
+                android:textColor="#FFF"
                 android:textSize="34sp"
                 android:textStyle="bold"
                 tools:text="@string/welcome_label" />
@@ -39,6 +43,8 @@
                     android:layout_marginEnd="8sp"
                     android:layout_marginRight="8sp"
                     android:hint="@string/search_label"
+                    android:textColor="#FFF"
+                    android:textColorHint="#454545"
                     android:textStyle="italic" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -60,13 +66,14 @@
             <TextView
                 android:layout_width="160dp"
                 android:layout_height="55dp"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="34dp"
                 android:layout_marginTop="34sp"
                 android:gravity="start"
                 android:text="@string/popular_label"
-                android:textColor="#000000"
+                android:textColor="#000"
                 android:textSize="34sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp" />
 
             <HorizontalScrollView
                 android:layout_width="610dp"
@@ -79,73 +86,82 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#E91E63"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/bananas" />
+                        android:id="@+id/imageView21"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_aires_txt"
+                        style="@style/txt_icon_margin"/>
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#FF9800"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/cerezas" />
+                        android:id="@+id/imageView22"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_albanyl_txt"
+                        style="@style/txt_icon_margin"/>
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#9C27B0"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/frambuesas" />
+                        android:id="@+id/imageView23"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_carpinteria_txt"
+                        style="@style/txt_icon_margin"/>
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#E91E63"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/fresas" />
+                        android:id="@+id/imageView24"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_cerrajero_txt"
+                        style="@style/txt_icon_margin"/>
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#FF9800"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/kiwis" />
+                        android:id="@+id/imageView25"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_edomesticos_txt"
+                        style="@style/txt_icon_margin"/>
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:background="#673AB7"
-                        android:contentDescription="@string/banana"
-                        app:srcCompat="@drawable/mangos" />
-
+                        android:id="@+id/imageView26"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_electricista_txt"
+                        style="@style/txt_icon_margin"/>
                 </LinearLayout>
             </HorizontalScrollView>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="377dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="34dp"
+                android:background="@drawable/all_categories_btn"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:orientation="horizontal"
-                android:gravity="center" >
+                android:onClick="VerCategorias">
 
                 <TextView
                     android:layout_width="233dp"
                     android:layout_height="match_parent"
-                    android:text="@string/all_categories"
                     android:gravity="center"
-                    android:textColor="#000000"
+                    android:text="@string/all_categories"
+                    android:textColor="#000"
                     android:textSize="21sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="55dp"
                     android:layout_height="55dp"
-                    app:srcCompat="@drawable/jump"
-                    android:contentDescription="@string/jump"
+                    android:layout_marginStart="13dp"
                     android:layout_marginLeft="13dp"
-                    android:layout_marginStart="13dp" />
+                    android:contentDescription="@string/jump"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/jump" />
 
             </LinearLayout>
 
@@ -161,8 +177,9 @@
                     android:layout_height="55dp"
                     android:layout_marginEnd="89sp"
                     android:layout_marginRight="89sp"
-                    android:background="@drawable/btn_bg"
+                    android:background="@drawable/category_btn_bg"
                     android:text="@string/settings_btn"
+                    android:textAllCaps="false"
                     android:textColor="#FFFFFF"
                     android:textSize="21sp" />
 
@@ -170,8 +187,9 @@
                     android:id="@+id/button6"
                     android:layout_width="233dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/btn_bg"
+                    android:background="@drawable/category_btn_bg"
                     android:text="@string/profile_btn"
+                    android:textAllCaps="false"
                     android:textColor="#FFFFFF"
                     android:textSize="21sp" />
 
@@ -191,7 +209,7 @@
                     android:layout_height="55dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/logout_btn"
-                    app:srcCompat="@drawable/logout" />
+                    app:srcCompat="@drawable/ic_logout" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -199,9 +217,10 @@
                     android:layout_height="55dp"
                     android:layout_gravity="clip_vertical"
                     android:layout_weight="1"
+                    android:background="@drawable/exit_btn_bg"
                     android:gravity="center"
                     android:text="@string/label_logout"
-                    android:textColor="#000000"
+                    android:textColor="#FFF"
                     android:textSize="21sp"
                     android:textStyle="bold"
                     tools:text="@string/label_logout" />
