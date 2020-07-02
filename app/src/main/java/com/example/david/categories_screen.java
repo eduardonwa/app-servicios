@@ -21,6 +21,8 @@ public class categories_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_screen);
 
+        showSelectecFragment(new Listado());
+
         mBottomNavigation = (BottomNavigationView)findViewById(R.id.bottom_navbar);
         mBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
